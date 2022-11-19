@@ -1,0 +1,52 @@
+
+
+body{
+    background-color: darkcyan;
+}
+#container{
+    width:70%;
+    display: grid;
+    grid-template-columns: 29% 29% 29% 16%;
+    column-gap:5px;
+    margin-left: 15%;
+   
+    height:40px;
+}
+input{
+    background-color:darkkhaki;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+button{
+    background-color:red;
+    color: cornsilk;
+    border-radius: 5px;
+}
+#container2{
+    width:80%;
+    margin-top: 50px;
+    margin-left:10%;
+
+}
+ table{
+    width:100%;
+    
+    
+}
+table td{
+    text-align: center;
+    background-color: rgb(193, 181, 181);
+    height: 30px;
+    color:white;
+    font-size: 20px;
+}
+th{
+    font-size: 20px;
+    background-color: burlywood;
+    height: 40px;
+    
+}
+#add{
+    background-color: green;
+}
