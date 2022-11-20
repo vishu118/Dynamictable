@@ -1,20 +1,22 @@
 
-var tbodyelm=document.getElementById('tablebody');
-    var name1=document.getElementById("name1");
-    var email=document.getElementById("email");
-    var phone=document.getElementById("phone");
+    const tablebody=document.getElementById('tablebody');
+    const Name = document.getElementById("name");
+    const email=document.getElementById("email");
+    const number=document.getElementById("number");
+    const btn = document.getElementById('add');
 
-    function fun()
-    {   
-        if(phone.value == "" || name1.value == "" || email.value == ""){
-            alert('hi');
+
+
+btn.onclick = ()=>{  
+        if(number.value == "" || Name.value == "" || email.value == ""){
+            alert('Enter some data');
             return;
           } 
    
-    tbodyelm.innerHTML+=`<tr>
-         <td>${name1.value}</td>
+    tablebody.innerHTML+=`<tr>
+         <td>${Name.value}</td>
         <td>${email.value}</td>
-        <td>${phone.value}</td>
+        <td>${number.value}</td>
     
        <td class="remove"><button>Remove</button></td>
        </tr>
@@ -23,17 +25,22 @@ var tbodyelm=document.getElementById('tablebody');
 
     var row = document.querySelectorAll(".remove");
         for(var i=0; i<row.length; i++){
-            row[i].onclick = function(){
+           
+            row[i].onclick = function(){ 
                 this.parentNode.remove();
+                
             }
+            
         }
+        
     
-  name1.value="";
+  Name.value="";
   email.value="";
-  phone.value="";
+  number.value="";
 
   
 }
+
 
 
 
