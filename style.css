@@ -24,9 +24,9 @@ body{
 
 }
 
-#container input{
+ form input{
     width:25%;
-    height: 80%;
+    height: 40px;
     text-align: center;
     font-size: 20px;
     border-radius: 8px;
@@ -35,9 +35,12 @@ body{
 
 }
 
-#add{
-    width: 15%;
-    height:70% ;
+form{
+    width: 100%;
+}
+
+.sub{
+    width: 20%;
     border-radius: 8px;
     background-color: rgb(220, 216, 213);
     font-family: monospace;
@@ -83,6 +86,22 @@ table tr{
     font-family: monospace;
     font-size: large;
 }
+
+.error{
+    text-align:center;
+    color:red;
+    font-weight: bold;
+    font-size:2rem;
+    margin-top: 2rem;
+    
+  }
+  
+  .success{
+    text-align:center;
+    color:green;
+    font-weight: bold;
+    font-size:2rem;
+  }
 
 .remove button:hover{
     background-color: azure;

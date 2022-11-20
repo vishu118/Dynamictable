@@ -13,19 +13,24 @@
 <body>
     <h1>DYNAMIC TABLE</h1>
     <div id="container">
-    <table>
     
-    <input id="name" type="text"placeholder="Enter Your Name">
+    <form>
     
-    <input id="email" type="email"placeholder="Enter Your ID">
+    <input id="name" type="text" placeholder="Enter Your Name">
+    
+    <input id="email" type="email" placeholder="Enter Your ID">
 
-    <input id="number" type="text"placeholder="Enter Your Number">
+    <input id="number" type="tel" placeholder="Enter Your Number">
 
-    <button id="add">ADD ITEMS</button>
+    <!-- <button id="add">ADD ITEMS</button> -->
+    <input type="submit" value="Add Row" class="sub">
 
-    </table>
+    </form>
+    
 
 </div>
+
+
 <div id="ListToAdd">
     <table>
         <tr>
@@ -41,6 +46,8 @@
 
     </table>
 </div>
+<div class="error"></div>
+    <div class="success"></div>
 </body>
 <script src="app.js">
     
